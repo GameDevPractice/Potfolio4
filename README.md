@@ -1,9 +1,17 @@
+## 목차
+1. [목표](#목표)
+2. [구상도](#구상도)
+3. [Player](#Player)
+4. [Item](#Item)
+5. [UI](#UI)
+6. [LevelBP](#LevelBP)
+7. [완성본](#완성본)
 ## 목표
 ↓클릭  
 [![image](https://github.com/user-attachments/assets/199aeb0f-c9e8-4473-aa46-5f4236b80936)](https://store.steampowered.com/app/2000280/Im_going_to_die_if_I_dont_eat_sushi/)<br/>
 비슷하게 만들어보기
 
-### 구상도
+## 구상도
 ![image](https://github.com/user-attachments/assets/642dcfc5-8583-43fe-8629-191b071f339c)
 
 ### Player
@@ -59,7 +67,7 @@ Player의 Hp를 회복시키는 동시에 Increase Ball 함수를 사용하여 �
 ![image](https://github.com/user-attachments/assets/a82d20d2-dc56-4cdc-94c1-76459731cf70)<br/>
 Tick을 통해 매 시간 Player과 게임을 클리어 했는지 확인한다.<br/>
 
-### UI
+## UI
 #### WB_PlayerHealth
 ![image](https://github.com/user-attachments/assets/31de676c-aaee-4030-bafd-e7e51b423f76)<br/>
 좌상단에는 VictoryItem을 얼마나 먹었는지 표시하게 해주었으며, 중심부는 Player HP을 우상단에는 점수를 표시하였다.<br/>
@@ -76,7 +84,7 @@ Player와 VictoryItem들의 Image들을 배열로 저장을한다.
 ![image](https://github.com/user-attachments/assets/30b8284e-761d-4c7f-a247-358bd6cca878)<br/>
 Tick을 통해 상시 Player의 Hp 값을 검사하고 점수와 VictoryItem 이미지를 표시하게 한다
 
-### LevelBP
+## LevelBP
 ![image](https://github.com/user-attachments/assets/7a26c46d-b935-4de8-b7f7-b2854925acf2)<br/>
 게임 규칙 및 위에서 설명한 아이템 스폰, 배경 응악을 관리한다
 
@@ -101,3 +109,7 @@ SpawnBread와 동일하게 스폰을 하다 일정 갯수(7)를 넘으면 그만
 
 ![image](https://github.com/user-attachments/assets/a73dea83-f030-49cd-bed1-9512813acfda)<br/>
 만일 하나라도 스폰되었음 배열에 있는 Item과의 거리를 측정 후 스폰하여 저장한다<br/>
+
+## 완성본
+↓클릭  
+[![image](https://github.com/user-attachments/assets/e03bae49-fd00-478d-ac98-832dc043b07f)](https://www.youtube.com/watch?v=0Ude2i2BQac)<br/>
