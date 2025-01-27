@@ -1,9 +1,17 @@
+## 목차
+1. [목표](#목표)
+2. [구상도](#구상도)
+3. [Player](#Player)
+4. [Items](#Items)
+5. [UI](#UI)
+6. [LevelBP](#LevelBP)
+7. [완성본](#완성본)
 ## 목표
 ↓클릭  
 [![image](https://github.com/user-attachments/assets/199aeb0f-c9e8-4473-aa46-5f4236b80936)](https://store.steampowered.com/app/2000280/Im_going_to_die_if_I_dont_eat_sushi/)<br/>
 비슷하게 만들어보기
 
-### 구상도
+## 구상도
 ![image](https://github.com/user-attachments/assets/642dcfc5-8583-43fe-8629-191b071f339c)
 
 ### Player
@@ -39,6 +47,7 @@ Decrease Health를 이용해 1초 마다 Hp가 닳는 Custom Evenet
 ![image](https://github.com/user-attachments/assets/afedca36-8e4a-4186-a3f4-4430a124b5eb)<br/>
 게임을 클리어 할 아이템을 획득 시 사용되는 함수, 7개를 획득하면 게임이 끝이 난다<br/>
 
+## Items
 ### Item(Bread)
 ![image](https://github.com/user-attachments/assets/e21bfacc-898d-41a7-8b41-479198c5fe70)<br/>
 Item들의 부모가 되는 Actor<br/>
@@ -59,7 +68,7 @@ Player의 Hp를 회복시키는 동시에 Increase Ball 함수를 사용하여 �
 ![image](https://github.com/user-attachments/assets/a82d20d2-dc56-4cdc-94c1-76459731cf70)<br/>
 Tick을 통해 매 시간 Player과 게임을 클리어 했는지 확인한다.<br/>
 
-### UI
+## UI
 #### WB_PlayerHealth
 ![image](https://github.com/user-attachments/assets/31de676c-aaee-4030-bafd-e7e51b423f76)<br/>
 좌상단에는 VictoryItem을 얼마나 먹었는지 표시하게 해주었으며, 중심부는 Player HP을 우상단에는 점수를 표시하였다.<br/>
@@ -76,4 +85,32 @@ Player와 VictoryItem들의 Image들을 배열로 저장을한다.
 ![image](https://github.com/user-attachments/assets/30b8284e-761d-4c7f-a247-358bd6cca878)<br/>
 Tick을 통해 상시 Player의 Hp 값을 검사하고 점수와 VictoryItem 이미지를 표시하게 한다
 
-### 
+## LevelBP
+![image](https://github.com/user-attachments/assets/7a26c46d-b935-4de8-b7f7-b2854925acf2)<br/>
+게임 규칙 및 위에서 설명한 아이템 스폰, 배경 응악을 관리한다
+
+#### GameRule
+![image](https://github.com/user-attachments/assets/556c8942-2aa4-4645-8ebb-34813614d818)<br/>
+Player의 체력 감소 함수를 실행하며, 플레이어 체력 UI를 생성한다.
+
+#### SpawnBread
+EQS를 통해 Item을 스폰하게 한다.<br/>
+![image](https://github.com/user-attachments/assets/f6287e27-2bfd-4a10-8c3d-6392e9c2d9db)<br/>
+![image](https://github.com/user-attachments/assets/01a9073b-5a84-437c-8b51-06693382b58f)<br/>
+EQS 실행 후 저장된 Item Class를 사용하여 Item을 스폰한다.
+
+#### SpawnVictoryItem
+EQS를 통해 VictoryItem를 스폰하게 한다.<br/>
+![image](https://github.com/user-attachments/assets/3923fea6-7db4-44d3-9466-dd3cc902e4e9)<br/>
+![image](https://github.com/user-attachments/assets/18e85099-bacb-4477-9a27-59a40d1a032e)<br/>
+SpawnBread와 동일하게 스폰을 하다 일정 갯수(7)를 넘으면 그만 스폰한다.<br/>
+
+![image](https://github.com/user-attachments/assets/6501e7cc-19ef-45ab-8b28-93fdfbd97787)<br/>
+스폰된 VictoryItem이 없다면 EQS로 저장된 위치 중 랜덤으로 스폰 후 배열에 저장한다.<br/>
+
+![image](https://github.com/user-attachments/assets/a73dea83-f030-49cd-bed1-9512813acfda)<br/>
+만일 하나라도 스폰되었음 배열에 있는 Item과의 거리를 측정 후 스폰하여 저장한다<br/>
+
+## 완성본
+↓클릭  
+[![image](https://github.com/user-attachments/assets/e03bae49-fd00-478d-ac98-832dc043b07f)](https://www.youtube.com/watch?v=EwTlhkYbNlA)
