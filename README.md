@@ -113,4 +113,4 @@ SpawnBread와 동일하게 스폰을 하다 일정 갯수(7)를 넘으면 그만
 
 ## 완성본
 ↓클릭  
-[![image](https://github.com/user-attachments/assets/e03bae49-fd00-478d-ac98-832dc043b07f)](https://www.youtube.com/watch?v=0Ude2i2BQac)<br/>
+[![image](https://github.com/user-attachments/assets/e03bae49-fd00-478d-ac98-832dc043b07f)](https://www.youtube.com/watch?v=EwTlhkYbNlA)
