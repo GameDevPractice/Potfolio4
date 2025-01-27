@@ -2,7 +2,7 @@
 1. [목표](#목표)
 2. [구상도](#구상도)
 3. [Player](#Player)
-4. [Item](#Item)
+4. [Items](#Items)
 5. [UI](#UI)
 6. [LevelBP](#LevelBP)
 7. [완성본](#완성본)
@@ -47,6 +47,7 @@ Decrease Health를 이용해 1초 마다 Hp가 닳는 Custom Evenet
 ![image](https://github.com/user-attachments/assets/afedca36-8e4a-4186-a3f4-4430a124b5eb)<br/>
 게임을 클리어 할 아이템을 획득 시 사용되는 함수, 7개를 획득하면 게임이 끝이 난다<br/>
 
+## Items
 ### Item(Bread)
 ![image](https://github.com/user-attachments/assets/e21bfacc-898d-41a7-8b41-479198c5fe70)<br/>
 Item들의 부모가 되는 Actor<br/>
